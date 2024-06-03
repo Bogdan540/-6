@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+
+int main() {
+    int x1, y1, x2, y2;
+    std::cin >> x1 >> y1 >> x2 >> y2;
+
+    // Обчислюємо відстань за формулою евклідової відстані
+    double length = std::sqrt(std::pow(x2 - x1, 2) + std::pow(y2 - y1, 2));
+
+    // Виводимо результат з точністю до шести знаків після коми
+    std::cout << std::fixed << std::setprecision(6) << length << std::endl;
+
+    return 0;
+}
